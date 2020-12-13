@@ -1,32 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="mx-auto">
+    <div id="nav" class="flex bg-gray-200 justify-around text-xl p-2 mt-2 border-t-2 border-gray-700 border-r-2 border-l-2 rounded-t-lg w-10/12 mx-auto">
+      <router-link class="underline" to="/" exact>Home</router-link> |
+      <router-link class="underline" to="/list">List</router-link> |
+      <router-link class="underline" to="/user">User</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+ #app {
+   max-width: 666px;
+ }
+ .router-link-active {
+   color: #aaa;
+ }
+ body {
+   max-height: 100vh;
+   overflow-y: hidden
+ }
 </style>
